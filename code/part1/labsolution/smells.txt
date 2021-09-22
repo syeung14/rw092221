@@ -1,0 +1,16 @@
+We identified the following code and design smells:
+-duplication
+-poor naming
+-may be use an array for buttons
+-separate nested class
+-long function
+-lot of similar variable names
+-lack of cohesion in the event handler
+-prefer functions with good name instead of comments
+-simplify the code, way too complex
+-...
+
+How can we proceed from here?
+We identified the smells
+Pick one significant smell to refactor (consult with a colleague to see if that is good idea)
+Write a test and then refactor

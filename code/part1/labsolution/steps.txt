@@ -1,0 +1,12 @@
+At the end of each step we want to push the code into the repository.
+In this lab solution for you to see more easily the steps, I have created different
+directories for each step. In reality, each of these steps will be separate commits to the
+main branch.
+
+✓Step0 View the Original code (see the smells.txt file)
+✓Step1 WriteUnitTests
+✓Step2 ComposeMethod
+✓Step3 RemoveDuplication
+✓Step4 ReplaceAlgorithm_Looping
+✓Step5 FinallyRemoveRedundancy_CleanUpModel
+✓Step6 KeepUnitTestSeparate
