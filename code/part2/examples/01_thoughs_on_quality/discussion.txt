@@ -1,0 +1,113 @@
+Why should we care about quality?
+
+"Lowering quality lengthens the development time"
+-First Law of Programming
+
+We sometimes have to slow down in order to gain speed.
+
+If we are forced to move at a breakneck speed, we may actually
+breakneck.
+
+Agile development is really feedback driven development
+
+Being agile is the ability to accommodate change in requirements
+event late in the game at a reasonable cost.
+
+We can't be agile if the code is of poor quality
+
+Code quality is how we tell our colleague how we feel about them.
+
+Code quality is as much about humanity as about programming and
+the economics.
+
+How do we create readable code?
+  The only way I know to create readable code is to read it.
+  Ask the colleagues to read the code
+
+
+What is quality?
+
+The quality of code is inversely proportional to the amount of time
+and effort it takes to understand it.
+
+A good code reads like a story and not like a puzzle
+
+We all know that we have technical debt
+But do we know what they really area, right away?
+What are we doing about it?
+
+Please list all your technical debts and print them in large fonts
+and post them on the wall in the group work area, in order of
+high to lower priority.
+
+Schedule time to pay technical debts
+
+High cohesion - code should be narrow, focused, and do one thing
+Low and loose coupling
+
+Tight coupling or coupling in general makes it hard to extend the
+code and also to test it.
+
+orderCoffee(3);
+
+orderCoffee(SIZE.LARGE);
+
+One reveals the intention better than the other
+
+order(1, 4, 7); //huh, what are these numbers?
+//you look up the docs, and find order is defined as 
+//order(p1, p2, p3); //reaction - murder me now
+
+order(domainSpecificVariableName1, domainSpecificVariableName2,
+	domainSpecificVariableName3);
+
+
+//in some languages
+order(height = 1, weight = 4, size = 7);
+
+As much as possible reveal the intention in code. Variable names,
+logic, class names, algorithms, etc.
+
+Please comment why and not what the code is doing.
+The code should be self-documenting for what it does and then
+we can comment or document the why and the design decisions.
+
+x << 2; //shift - ok, yes I see it, but why are we shifting?
+The intent is totally missing
+
+We can use defining variable names
+
+.thisUsefulFunction(someOjbectThatisExpected, IDE shows n as
+the next parameter)
+n means I don't care about you the reader
+
+t means nothing to me, is it temperature or something else
+
+Don't confuse terse with concise. You want variable names, etc.
+to be concise but no terse nor verbose.
+
+Terse is short like concise is, but really hard to understand.
+Concise is short but unlike terse serves its purpose to convey the
+necessary details.
+
+n is terse
+countOfStock is concise and even a count may be enough if the
+context gives us enough information to know what the count is
+referring to. However, numbersOfStocksTradedTodayBeforeClosing is rather verbose and unnecessary.
+
+
+When someone says "this code is hard to understand, write some comments," please take that as "this code is hard to understand, please refactor." Don't write comments to cover up bad code, instead please refactor.
+
+Poor practices are often led by compliance that may not be right
+choice for different context: Threat Driven Development
+
+Write code that is self documenting rather than needing extra comments in the code
+
+Self document code
+Use tests as a form of documentation as well
+Let other documents (javadoc) convey the pre and post conditions 
+and exceptions of behavior or use
+
+
+
+
