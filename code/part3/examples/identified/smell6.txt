@@ -1,0 +1,21 @@
+/**
+* Writes the member field
+*/
+protected void writeMemberFields() {
+...
+}
+
+/**
+* This method allows pass through
+*/
+public void allowPassThrough() {
+...
+}
+
+Smells:
+Totally useless documentation to the point of insulting the reader.
+
+What does the method do beyond what is known from the method name and the signture?
+That is what a good documentation should be conveying, and not the obvious from the 
+code. Tell me what exceptions that I may expect.
+

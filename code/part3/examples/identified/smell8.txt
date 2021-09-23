@@ -1,0 +1,23 @@
+package java.util;
+
+public class Stack<E> extends Vector<E> {
+...
+}
+
+Smell:
+
+The smell here is inheritance, this code violates the Liskov's Substitution Principle.
+
+Think of the invariants of a class and its functions.
+
+A stack has some invariants:
+LIFO
+Elements are popped in the reverse order of their push
+
+Vector allows for elements to be inserted and removed in any order.
+
+If we pass an instance of a Stack where a Vector instance is expected then the stack's
+invariants may be violated.
+
+This is an example where we should use delegation instead of inheritance.
+

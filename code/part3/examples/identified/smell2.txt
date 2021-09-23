@@ -1,0 +1,18 @@
+public MimeMultipartDataSource(String name, MimeMultipart data) {
+  this.name = name;
+  this.contentType = data == null ? CONTENT_TYPE : data.getContentType();
+  
+  os = new ByteArrayOutputStream();
+  
+  try {
+    if(data != null) {
+       data.writeTo(os);
+    }
+  } catch(Exception ex) {
+  }
+}
+
+Smells:
+smelly null check
+constructor doing too much work than setting fields
+**we should not suppress exceptions

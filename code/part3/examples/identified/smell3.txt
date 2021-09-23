@@ -1,0 +1,12 @@
+public String getTargetEndpointAddress() {
+  try {
+    if(transport == null) return( null );
+    return ( transport.getUrl() );
+  } catch(Exception ex) {
+    return ( null );
+  }
+}
+
+Smell:
+Suppression of exception and return null is not good
+Unnecessary use of ()

@@ -1,0 +1,15 @@
+Overhearing from developers:
+
+I am working on a large enterprise system, with well over ten million lines of code, it sometimes takes hours to get issues resolved.
+
+Smell:
+Code is not modular
+Large
+Not cohesive
+Tight coupling
+Spaghetti code
+Duplicated code
+Unnecessary code
+Hard to change
+Unnecessary complexity
+Code that is obsolete but has not been removed

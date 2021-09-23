@@ -1,0 +1,24 @@
+int _pegs[][] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+//0 is Empty, 1 is O, 2 is X
+
+Smell:
+Poor abstraction, and not considering the intent and the domain specific details.
+
+Have you ever seen programmers do the following:
+
+return "running";
+
+return "stopped";
+
+String, int, etc. may not be the right abstraction from the domain point of view.
+
+The code is hard to understand, we can't rely on type verifications when using
+statically typed languages.
+
+Another example is where developers may use int for currency.
+
+Solutions?
+1. Use enums
+2. Create a class
+3. Value types where possible or incline class like in Kotlin
+

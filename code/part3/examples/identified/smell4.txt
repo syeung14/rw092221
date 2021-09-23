@@ -1,0 +1,15 @@
+catch(Exception ex) {
+  if(ex instanceof AxisFault) {
+    throw (AxisFault) ex;
+  } else {
+    log.debug(Messages.getMessage("exceptoin00"), ex);
+    throw AxisFault.makeFault(ex);
+  }
+}
+
+Smell:
+typecase of ex
+code is quite procedural
+Exception message not useful
+Needless cast
+multiple catch instead of if
