@@ -1,0 +1,10 @@
+Smells:
+-primitive obsession for game status and cell status
+-string constants
+-missing {} for the for and if
+-hard coded magic numbers
+-constructor doing more work?
+-some calculations that could be pull out of the functions
+  -method extraction
+-high cyclomatic complexity
+-unnecessary state that could be moved into local variables
