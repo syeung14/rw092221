@@ -1,0 +1,8 @@
+catch(Exception ex) {
+  if(ex instanceof AxisFault) {
+    throw (AxisFault) ex;
+  } else {
+    log.debug(Messages.getMessage("exceptoin00"), ex);
+    throw AxisFault.makeFault(ex);
+  }
+}

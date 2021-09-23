@@ -1,0 +1,13 @@
+/**
+* Writes the member field
+*/
+protected void writeMemberFields() {
+...
+}
+
+/**
+* This method allows pass through
+*/
+public void allowPassThrough() {
+...
+}

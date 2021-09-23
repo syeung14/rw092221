@@ -1,0 +1,21 @@
+Smells identified:
+✓huge if-else chain
+?FileWriter constructor parameter name
+✓duplication of code between the writers
+?look at getContents of FileWriter
+✓null is a smell and avoid it
+-unused imports
+-useless throws exception statements
+
+We may return Optional, but never receive an Optional.
+
+The constructors should not do any real work. They should merely set
+fields and get out.
+
+Effective Java has a suggestion for constructors:
+Instead of using a constructor, they suggest writing static factory
+methods and making constructors private or protected.
+
+Avoid throwing exception or creating threads from within constructors.
+
+
