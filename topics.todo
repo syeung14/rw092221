@@ -8,126 +8,126 @@ userid: onlineclass
 password: code4love
 
 Part 1: Refactoring
--What is refactoring?
--Why should we refactor?
--When should we refactor?
--The impact of refactoring
--The effects of refactoring
--Refactoring vs rewrite
--Code smells
--Design smells
--Refactoring is not a stop the world approach
--Incremental, small steps
--Convert a large task into a sequence of small steps, releasable in between those small steps
--What is needed before we refactor?
- -what if we get it wrong?
- -What if we break what was working before?
- -What if we have not understood the behavior?
- -Fast feedback loops are highly critical
- -Ideally unit tests
- -Where not possible, integration tests
--Steps to refactor:
+✔What is refactoring?
+✔Why should we refactor?
+✔When should we refactor?
+✔The impact of refactoring
+✔The effects of refactoring
+✔Refactoring vs rewrite
+✔Code smells
+✔Design smells
+✔Refactoring is not a stop the world approach
+✔Incremental, small steps
+✔Convert a large task into a sequence of small steps, releasable in between those small steps
+✔What is needed before we refactor?
+ ✔what if we get it wrong?
+ ✔What if we break what was working before?
+ ✔What if we have not understood the behavior?
+ ✔Fast feedback loops are highly critical
+ ✔Ideally unit tests
+ ✔Where not possible, integration tests
+✔Steps to refactor:
  1. Identify a smell (design or code smell)
  2. Analyze to see if that is useful to refactor (don't assume)
  3. If it is a candidate for refactoring, check if test exists
  4. Write tests if there are none
  5. Refactor in small steps, verify tests pass
  6. Repeat until refactoring is complete
--lab
+✔lab
 
 Part 2: Caring about Code Quality
--Why should we care about code quality?
--First law of programming
--What is agility?
--Agility and code quality
--What is quality code?
--Technical debt
--Examples of technical debts
--Make it visible
--Schedule time to pay and reduce
--Favor high cohesion and low, loose coupling
--Remove coupling or move it where possible
--Program to reveal intention
--Prefer clear code over clever code
--From Zinner's "On Writing Well" to Refactoring
- -Simplicity
- -Clarity
- -Brevity
- -Humanity
--Comments on comments
--When to comment
--When not to comment
--Forms of documentations
- -self documenting code
- -expressive tests
--Avoid long functions
--Use the SLAP principle
--Avoid single letter variables except for a few cases
--Make names domain specific
--Do continuous code reviews
--How to do code reviews?
--lab 
+✔Why should we care about code quality?
+✔First law of programming
+✔What is agility?
+✔Agility and code quality
+✔What is quality code?
+✔Technical debt
+✔Examples of technical debts
+✔Make it visible
+✔Schedule time to pay and reduce
+✔Favor high cohesion and low, loose coupling
+✔Remove coupling or move it where possible
+✔Program to reveal intention
+✔Prefer clear code over clever code
+✔From Zinner's "On Writing Well" to Refactoring
+ ✔Simplicity
+ ✔Clarity
+ ✔Brevity
+ ✔Humanity
+✔Comments on comments
+✔When to comment
+✔When not to comment
+✔Forms of documentations
+ ✔self documenting code
+ ✔expressive tests
+✔Avoid long functions
+✔Use the SLAP principle
+✔Avoid single letter variables except for a few cases
+✔Make names domain specific
+✔Do continuous code reviews
+✔How to do code reviews?
+✔lab 
 
 Part 3: Measuring Code Quality
--Code smells
--Metaphor of smells
--How to measure?
--Rather very Instinctive
--let's identify some smells in code - code smells in examples
--things to measure
- -we can look for styles: consistency in style is important
- -look for improved practices in the language
+✔Code smells
+✔Metaphor of smells
+✔How to measure?
+✔Rather very Instinctive
+✔let's identify some smells in code - code smells in examples
+✔things to measure
+ ✔we can look for styles: consistency in style is important
+ ✔look for improved practices in the language
     in Java, avoid raw generic declaration, List vs. List<...>
     in JavaScript use const over let and avoid using var
- -look for error prone code
+ ✔look for error prone code
    threading issues or unprotected shared mutable variables in Java
    use of == instead of === in JavaScript
- - treat warnings as error
- - improper handling of exceptions
- - degree of stability vs. abstraction in OO code
- - cyclomatic complexity of functions
- - code coverage (with a large grain of salt)
--start early
--Be continuous, not episodic
--tools to identify code smells
- -PMD
- -CPD and Simion for detecting duplication of code
- -FindBugs
- -Sonar
--lab
+ ✔ treat warnings as error
+ ✔ improper handling of exceptions
+ ✔ degree of stability vs. abstraction in OO code
+ ✔ cyclomatic complexity of functions
+ ✔ code coverage (with a large grain of salt)
+✔start early
+✔Be continuous, not episodic
+✔tools to identify code smells
+ ✔PMD
+ ✔CPD and Simion for detecting duplication of code
+ ✔FindBugs
+ ✔Sonar
+✔lab
 
 Part 4: Towards Better Quality
--Some ways to improve quality
- -Start early
- -Don’t Compromise
- -Schedule time to lower your technical debt
- -Make it work; make it better real soon
- -Requires monitoring and changing behavior
- -Be willing to help and be helped
- -Devise lightweight non-bureaucratic measures
+✔Some ways to improve quality
+ ✔Start early
+ ✔Don’t Compromise
+ ✔Schedule time to lower your technical debt
+ ✔Make it work; make it better real soon
+ ✔Requires monitoring and changing behavior
+ ✔Be willing to help and be helped
+ ✔Devise lightweight non-bureaucratic measures
 
--Both a collective effort and an individual effort
+✔Both a collective effort and an individual effort
 
--Individual Efforts
-  -Care about the craft
-  -Take pride in writing readable code
-  -method, variable, class names
-  -short methods, smaller classes
-  -keep it simple
-  -avoid unnecessary complexity
-  -checkin frequently
-  -avoid cargo cult (blindly following rituals, styles,...)
-  -seek feedback and constructive criticism
+✔Individual Efforts
+  ✔Care about the craft
+  ✔Take pride in writing readable code
+  ✔method, variable, class names
+  ✔short methods, smaller classes
+  ✔keep it simple
+  ✔avoid unnecessary complexity
+  ✔checkin frequently
+  ✔avoid cargo cult (blindly following rituals, styles,...)
+  ✔seek feedback and constructive criticism
 
--Team Efforts
- -take collective ownership
- -create an environment for positive interactions
- -provide constructive feedback
- -practice frequent code reviews
- -treat warnings as errors
- -don't rush
--lab
+✔Team Efforts
+ ✔take collective ownership
+ ✔create an environment for positive interactions
+ ✔provide constructive feedback
+ ✔practice frequent code reviews
+ ✔treat warnings as errors
+ ✔don't rush
+✔lab
 
 Part 5: How to approach refactoring
--the flow chart
--discussions
+✔the flow chart
+✔discussions
